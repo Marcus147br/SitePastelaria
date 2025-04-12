@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgb(174, 174, 174);
+  }
+  
+  .logo img {
+    height: 100px;
+  }
+  
+  .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .destaque-especial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #9e0000, #e60000);
+    color: white;
+    padding: 40px 60px;
+    position: relative;
+  }
+  
+  .destaque-especial .conteudo {
+    max-width: 50%;
+  }
+  
+  .destaque-especial h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .destaque-especial p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-pedir {
+    background-color: white;
+    color: #e60000;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn-pedir:hover {
+    background-color: #ffcccc;
+  }
+  
+  .destaque-especial .imagem img {
+    max-height: 200px;
+  }
+  .pastel-tradicional {
+    background-color: #e0e0e0;
+    padding: 50px 30px;
+    text-align: center;
+  }
+  
+  .pastel-tradicional h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #800000;
+  }
+  
+  .cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .item .info {
+    margin-top: 15px;
+  }
+  
+  .item h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .item .preco {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #b30000;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .rodape {
+    background-color: #911e1e;
+    color: white;
+    padding: 40px 20px;
+    font-family: sans-serif;
+  }
+  
+  .container-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+  }
+  
+  .logo-rodape img {
+    width: 150px;
+  }
+  
+  .contato, .redes, .localizacao {
+    flex: 1 1 200px;
+  }
+  
+  .rodape h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .rodape p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+  
+  .localizacao img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  .porque-escolher {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .porque-escolher h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  .vantagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .vantagem {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .vantagem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .vantagem img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .vantagem h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .vantagem p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+  }
+        
