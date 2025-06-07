@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nós - Pastelaria do Tonhão</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo Pastelaria do Tonhão">
+    </div>
+    <nav class="menu">
+      <a href="index.html" class="btn-home">Voltar</a>
+
+    </nav>
+  </header>
+
+  <!-- Seção Sobre Nós -->
+  <section class="sobre-nos">
+    <h2>Sobre a Pastelaria do Tonhão</h2>
+    <div class="conteudo">
+      <p>A Pastelaria do Tonhão é uma tradicional pastelaria localizada no coração de Varginha, Minas Gerais. Com mais de 50 anos de história, somos conhecidos por nossos pastéis deliciosos e feitos na hora. Nossa missão é oferecer aos nossos clientes uma experiência saborosa e acolhedora, com qualidade e preço justo. Nossos pastéis são preparados com ingredientes frescos e sem conservantes, garantindo o melhor sabor para você e sua família.</p>
+
+      <h3>Nosso Compromisso</h3>
+      <p>Na Pastelaria do Tonhão, nosso compromisso é oferecer o melhor para os nossos clientes. Todos os nossos produtos são feitos na hora, com ingredientes frescos e selecionados. Além disso, prezamos pela qualidade no atendimento, sempre buscando atender de forma rápida e cordial. Queremos que você se sinta em casa ao saborear nossos pastéis e outras delícias!</p>
+
+      <h3>Nossa História</h3>
+      <p>A Pastelaria do Tonhão foi fundada em 1960 por Tonhão, que começou vendendo pastéis em sua pequena barraca na praça central de Varginha. Com o passar dos anos, o negócio cresceu e se tornou uma das pastelarias mais tradicionais da cidade, conquistando a confiança e o carinho dos clientes. Hoje, a Pastelaria do Tonhão é referência em sabor e qualidade, com uma grande variedade de pastéis e outros produtos deliciosos.</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container-rodape">
+      <div class="logo-rodape">
+        <img src="imagens/logo.png" alt="Logo Pastelaria do Tonhão">
+      </div>
+      <div class="contato">
+        <h3>Contato</h3>
+        <p><img src="imagens/ifood.png" class="icon" alt="iFood"> iFood</p>
+        <p><img src="imagens/tel.png" class="icon" alt="Telefone"> (35) 9 9988-1231</p>
+        <p><img src="imagens/wpp.png" class="icon" alt="WhatsApp"> (35) 9 8471-5000</p>
+      </div>
+      <div class="redes">
+        <h3>Redes</h3>
+        <p><img src="imagens/instagram.png" class="icon" alt="Instagram"> Instagram</p>
+      </div>
+      <div class="localizacao">
+        <h3>Localização</h3>
+        <img src="imagens/loc.png" alt="Mapa localização">
+        <p>Praça São Charbel, 71 - Jardim Andere, Varginha - MG, 37006-510</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="#" id="whatsapp-button" class="whatsapp-float" target="_blank">
+    <img src="imagens/wpp.png" alt="Fale conosco no WhatsApp">
+  </a>
+  
+  <!-- Botão de Acessibilidade -->
+  <a id="acessibilidade-button" href="#" onclick="ativarModoAcessibilidade()" style="position: fixed; bottom: 90px; right: 20px; z-index: 1000;">
+    <img src="imagens/acessibilidade.png" alt="Acessibilidade" style="width: 50px; height: 50px;">
+  </a>
+
+  <script src="pasteltonhao.js"></script>
+  <script>
+    PastelTonhao.init();
+  </script>
+
+</body>
+</html>

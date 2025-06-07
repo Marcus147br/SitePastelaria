@@ -1,227 +1,543 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    background-color: rgb(174, 174, 174);
-  }
-  
-  .logo img {
-    height: 100px;
-  }
-  
-  .menu a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .destaque-especial {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #9e0000, #e60000);
-    color: white;
-    padding: 40px 60px;
-    position: relative;
-  }
-  
-  .destaque-especial .conteudo {
-    max-width: 50%;
-  }
-  
-  .destaque-especial h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  .destaque-especial p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .btn-pedir {
-    background-color: white;
-    color: #e60000;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .btn-pedir:hover {
-    background-color: #ffcccc;
-  }
-  
-  .destaque-especial .imagem img {
-    max-height: 200px;
-  }
-  .pastel-tradicional {
-    background-color: #e0e0e0;
-    padding: 50px 30px;
-    text-align: center;
-  }
-  
-  .pastel-tradicional h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    color: #800000;
-  }
-  
-  .cardapio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 30px;
-    justify-items: center;
-  }
-  
-  .item {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-  }
-  
-  .item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .item .info {
-    margin-top: 15px;
-  }
-  
-  .item h3 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-  }
-  
-  .item p {
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .item .preco {
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #b30000;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-weight: bold;
-  }
-  .rodape {
-    background-color: #911e1e;
-    color: white;
-    padding: 40px 20px;
-    font-family: sans-serif;
-  }
-  
-  .container-rodape {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: auto;
-    gap: 20px;
-  }
-  
-  .logo-rodape img {
-    width: 150px;
-  }
-  
-  .contato, .redes, .localizacao {
-    flex: 1 1 200px;
-  }
-  
-  .rodape h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .rodape p {
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-    font-size: 0.95rem;
-  }
-  
-  .icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
-  }
-  
-  .localizacao img {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-  }
-  .porque-escolher {
-    background-color: #f0f0f0;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .porque-escolher h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #000;
-  }
-  
-  .vantagens {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  .vantagem {
-    background-color: #ffffff;
-    padding: 30px 20px;
-    border-radius: 12px;
-    width: 280px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-  }
-  
-  .vantagem:hover {
-    transform: translateY(-5px);
-  }
-  
-  .vantagem img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .vantagem h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #000;
-  }
-  
-  .vantagem p {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.5;
-  }
-        
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: rgb(255, 242, 0);
+}
+
+.logo img {
+  height: 200px;
+}
+
+.menu a {
+  font-size: 18px;        /* aumenta o tamanho da letra */
+  padding: 10px 20px;     /* aumenta a área clicável */
+  margin: 0 10px;         /* espaço entre os botões */
+  background-color: #b30000; /* cor de fundo (um vermelho bonito) */
+  color: white;           /* cor do texto */
+  text-decoration: none;  /* tira o sublinhado */
+  border-radius: 8px;     /* bordas arredondadas */
+  transition: background-color 0.3s; /* animação suave */
+}
+
+.menu a:hover {
+  background-color: #800000; /* cor quando passar o mouse por cima */
+}
+
+.destaque-especial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #9e0000, #e60000);
+  color: white;
+  padding: 40px 60px;
+  height: auto; /* Ajusta a altura para que o conteúdo ocupe menos espaço */
+  max-height: 500px; /* Limita a altura máxima */
+}
+
+.destaque-especial .conteudo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Ajuste para ocupar o espaço necessário */
+}
+
+.destaque-especial h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+.destaque-especial p {
+  color: #FFF;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-pedir {
+  background-color: #FFCC00;
+  color: #8B0000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-pedir:hover {
+  background-color: #ffcccc;
+}
+
+.destaque-especial .imagem img {
+  max-height: 200px;
+}
+
+.pastel-tradicional {
+  background-color: #f0f0f0;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.pastel-tradicional h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem; /* Ajuste o tamanho conforme necessário */
+  text-align: center; /* Centraliza o título */
+  color: #8B0000; /* Escolha uma cor chamativa para o título */
+  text-transform: uppercase; /* Torna o texto em maiúsculas */
+  letter-spacing: 3px; /* Aumenta o espaçamento entre as letras */
+  margin-top: 20px; /* Ajuste a margem para um bom espaçamento */
+}
+
+.cardapio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.item {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.item img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.item .info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #800000;
+}
+
+.item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.item .preco {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #b30000;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item .preco:hover {
+  background-color: #ff4d4d;
+}
+
+.item:hover {
+  transform: translateY(0);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.rodape {
+  background-color: #e6000e;
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.container-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os itens */
+  align-items: center; /* Centraliza verticalmente */
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.rodape .logo-rodape {
+  display: flex;
+  justify-content: center; /* Centraliza a logo */
+  align-items: center; /* Alinha verticalmente */
+  width: 100%;
+  padding-left: 10px;
+}
+
+.rodape .logo-rodape img {
+  width: 200px; /* Aumenta o tamanho da logo */
+  height: auto; /* Mantém a proporção da logo */
+}
+
+.rodape h3 {
+  font-family: 'Blues', sans-serif; /* Aplica a fonte Blues */
+  font-size: 2rem; /* Aumenta o tamanho da fonte */
+  margin-bottom: 10px;
+}
+
+.contato, .redes, .localizacao {
+  flex: 1 1 200px;
+}
+
+.rodape p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.localizacao img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.porque-escolher {
+  background-color: #d4d2d2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.porque-escolher h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.vantagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vantagem {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.vantagem:hover {
+  transform: translateY(-5px);
+}
+
+.vantagem img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.vantagem h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.vantagem p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.acessibilidade-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.acessibilidade-float img {
+  width: 60%;
+  height: 60%;
+  margin-top: 20%;
+}
+
+.modo-acessivel {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-size: 120%;
+}
+
+.modo-acessivel a,
+.modo-acessivel h1, 
+.modo-acessivel h2, 
+.modo-acessivel h3, 
+.modo-acessivel p, 
+.modo-acessivel span {
+  color: #ffff00 !important; /* Textos em amarelo */
+}
+
+.modo-acessivel img {
+  filter: grayscale(100%);
+}
+/* Seção: Bebidas */
+.bebidas {
+  background-color: #f0f0f0; /* Mesmo fundo que a seção de pastéis */
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.bebidas h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem; /* Tamanho da fonte igual ao de Pastel Tradicional */
+  text-align: center; /* Centraliza o título */
+  color: #8B0000; /* Cor do título igual ao de Pastel Tradicional */
+  text-transform: uppercase; /* Torna o texto em maiúsculas */
+  letter-spacing: 3px; /* Espaçamento entre as letras */
+  margin-top: 20px; /* Ajusta a margem para um bom espaçamento */
+}
+
+/* Ajusta a grid de itens de bebidas */
+.cardapio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Como na seção de pastéis */
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.item {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.item img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.item .info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #800000;
+}
+
+.item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.item .preco {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #b30000;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item .preco:hover {
+  background-color: #ff4d4d;
+}
+
+.item:hover {
+  transform: translateY(0);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+/* Seção Sobre Nós */
+.sobre-nos {
+  background-color: #f9f9f9;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.sobre-nos h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: #8B0000;
+  margin-bottom: 20px;
+}
+
+.sobre-nos .conteudo p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.sobre-nos h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #8B0000;
+  margin-top: 40px;
+}
+/* Seção Receba Seu Pastel em Casa */
+.receba-pastel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0; /* Cor de fundo */
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.receba-pastel .conteudo {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.receba-pastel h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.receba-pastel p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.botoes a {
+  display: inline-block;
+  padding: 10px 15px; /* Ajuste o padding conforme necessário */
+  border-radius: 8px;
+  width: auto;
+  text-align: center;
+}
+
+.botoes .btn-ifood, .botoes .btn-whatsapp {
+  background-color: #e60012; /* Cor do iFood */
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.botoes .btn-ifood:hover {
+  background-color: #b30000; /* Cor ao passar o mouse */
+}
+
+.botoes .btn-whatsapp {
+  background-color: #25d366; /* Cor do WhatsApp */
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.botoes .btn-whatsapp:hover {
+  background-color: #128c7e; /* Cor ao passar o mouse */
+}
+
+.botoes img {
+  width: 40px; /* Ajusta o tamanho da imagem do ícone */
+  height: auto;
+}
+
+.receba-pastel .imagem {
+  flex: 1;
+  max-width: 400px;
+}
+
+.receba-pastel .imagem img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover; /* Garante que a imagem preencha o espaço corretamente */
+}
+
