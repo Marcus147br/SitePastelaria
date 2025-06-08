@@ -66,8 +66,3 @@ function ativarAcessibilidade() {
     document.body.classList.toggle('modo-acessivel');
 }
 
-// Inicializa o botão de acessibilidade
-document.getElementById('acessibilidade-button').addEventListener('click', function(event) {
-    event.preventDefault();
-    ativarAcessibilidade();
-});
