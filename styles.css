@@ -126,8 +126,80 @@ body {
 .item img {
   max-width: 100%;
   height: 180px;
-  object-fit: contain;
+  object-fit: cover; /* Ajusta a imagem para cobrir toda a área sem distorcer */
   border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.item .info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #800000;
+}
+
+.item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.item .preco {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #b30000;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item .preco:hover {
+  background-color: #ff4d4d;
+}
+
+.item:hover {
+  transform: translateY(0);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção: Bebidas */
+.bebidas {
+  background-color: #f0f0f0; /* Mesmo fundo que a seção de pastéis */
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.bebidas h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem; /* Tamanho da fonte igual ao de Pastel Tradicional */
+  text-align: center; /* Centraliza o título */
+  color: #8B0000; /* Cor do título igual ao de Pastel Tradicional */
+  text-transform: uppercase; /* Torna o texto em maiúsculas */
+  letter-spacing: 3px; /* Espaçamento entre as letras */
+  margin-top: 20px; /* Ajusta a margem para um bom espaçamento */
+}
+
+/* Ajusta a grid de itens de bebidas */
+.cardapio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Como na seção de pastéis */
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.item img {
+  width: 100%;          /* Garante que a imagem ocupe toda a largura disponível */
+  height: 180px;        /* Define uma altura fixa para todas as imagens */
+  object-fit: cover;    /* Ajusta a imagem para cobrir a área sem distorcer */
+  border-radius: 12px;  /* Mantém o arredondamento das bordas */
   margin-bottom: 15px;
 }
 
@@ -348,88 +420,7 @@ body {
 .modo-acessivel img {
   filter: grayscale(100%);
 }
-/* Seção: Bebidas */
-.bebidas {
-  background-color: #f0f0f0; /* Mesmo fundo que a seção de pastéis */
-  padding: 50px 30px;
-  text-align: center;
-}
 
-.bebidas h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 3rem; /* Tamanho da fonte igual ao de Pastel Tradicional */
-  text-align: center; /* Centraliza o título */
-  color: #8B0000; /* Cor do título igual ao de Pastel Tradicional */
-  text-transform: uppercase; /* Torna o texto em maiúsculas */
-  letter-spacing: 3px; /* Espaçamento entre as letras */
-  margin-top: 20px; /* Ajusta a margem para um bom espaçamento */
-}
-
-/* Ajusta a grid de itens de bebidas */
-.cardapio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Como na seção de pastéis */
-  gap: 30px;
-  justify-items: center;
-  padding: 20px 0;
-}
-
-.item {
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 20px;
-  max-width: 250px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  transform: translateY(20px);
-  opacity: 0;
-}
-
-.item img {
-  max-width: 100%;
-  height: 180px;
-  object-fit: contain;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.item .info {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.item h3 {
-  margin: 10px 0 5px;
-  font-size: 20px;
-  color: #800000;
-}
-
-.item p {
-  font-size: 14px;
-  color: #555;
-}
-
-.item .preco {
-  display: inline-block;
-  margin-top: 12px;
-  background-color: #b30000;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.item .preco:hover {
-  background-color: #ff4d4d;
-}
-
-.item:hover {
-  transform: translateY(0);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
 /* Seção Sobre Nós */
 .sobre-nos {
   background-color: #f9f9f9;
@@ -457,6 +448,7 @@ body {
   color: #8B0000;
   margin-top: 40px;
 }
+
 /* Seção Receba Seu Pastel em Casa */
 .receba-pastel {
   display: flex;
@@ -540,4 +532,3 @@ body {
   border-radius: 10px;
   object-fit: cover; /* Garante que a imagem preencha o espaço corretamente */
 }
-
