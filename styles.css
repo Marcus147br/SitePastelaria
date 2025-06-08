@@ -18,6 +18,7 @@ body {
 }
 
 /* Menu de navegação - Botões */
+/* Menu de navegação - Botões */
 .menu a {
   font-size: 18px;
   padding: 10px 20px;
@@ -36,13 +37,19 @@ body {
 
 /* Responsividade - Ajuste para telas menores */
 @media (max-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    width: 100%; /* Garante que a navegação ocupe toda a largura */
+  }
+
   .menu a {
     font-size: 16px; /* Ajuste o tamanho da fonte */
-    padding: 8px 15px; /* Diminui o padding para caber melhor */
-    margin: 5px; /* Ajusta a margem */
-    display: block; /* Faz o botão ocupar a largura total */
+    padding: 12px 25px; /* Aumenta o padding para o botão ficar mais bonito */
+    margin: 10px 20px; /* Ajuste a margem para dar mais espaçamento */
+    display: inline-block;
+    width: auto; /* Permite que o botão tenha o tamanho necessário */
     text-align: center; /* Centraliza o texto dentro do botão */
-    width: 100%; /* Faz o botão ocupar toda a largura disponível */
   }
 }
 
