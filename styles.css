@@ -17,20 +17,35 @@ body {
   height: 200px;
 }
 
+/* Menu de navegação - Botões */
 .menu a {
-  font-size: 18px;        /* aumenta o tamanho da letra */
-  padding: 10px 20px;     /* aumenta a área clicável */
-  margin: 0 10px;         /* espaço entre os botões */
-  background-color: #b30000; /* cor de fundo (um vermelho bonito) */
-  color: white;           /* cor do texto */
-  text-decoration: none;  /* tira o sublinhado */
-  border-radius: 8px;     /* bordas arredondadas */
-  transition: background-color 0.3s; /* animação suave */
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #b30000;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  display: inline-block;
 }
 
 .menu a:hover {
-  background-color: #800000; /* cor quando passar o mouse por cima */
+  background-color: #800000;
 }
+
+/* Responsividade - Ajuste para telas menores */
+@media (max-width: 768px) {
+  .menu a {
+    font-size: 16px; /* Ajuste o tamanho da fonte */
+    padding: 8px 15px; /* Diminui o padding para caber melhor */
+    margin: 5px; /* Ajusta a margem */
+    display: block; /* Faz o botão ocupar a largura total */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+  }
+}
+
 
 .destaque-especial {
   display: flex;
@@ -548,5 +563,5 @@ body {
 .receba-pastel .imagem img {
   width: 100%;
   border-radius: 10px;
-  object-fit: cover; /* Garante que a imagem preencha o espaço corretamente */
+  object-fit: cover; /* Garante que a imagem preencha o espaço corretamente s*/
 }
