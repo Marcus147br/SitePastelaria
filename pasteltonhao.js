@@ -26,8 +26,8 @@ const PastelTonhao = (function() {
                     <h3>${item.nome}</h3>
                     <p>${item.descricao}</p>
                    <span class="preco">
-    <a href="https://wa.me/5535984715000?text=Gostaria%20de%20fazer%20um%20pedido%20de%20${item.nome}%20(${item.preco})" target="_blank">
-        R$ ${item.preco}
+    <a href="https://wa.me/5535984715000?text=Olá%20Gostaria%20de%20fazer%20um%20pedido%20de%20)" target="_blank">
+        
     </a>
 </span>
 
